@@ -1,5 +1,5 @@
 # nodejs-jumpstart
-Feel good application for people to share their smile reasons during the tough times of COVID-19.
+NodeJs - ExpressJs - Mysql - SocketIO 
 
 All Apis will respond with proper HTTP Response Code. A 200OK response code means success. Any response code other than 200OK means something wrong happend.
 
