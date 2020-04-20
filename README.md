@@ -8,11 +8,14 @@ All apis accept request content type `application/json`. If other than this requ
 Sample error JSON response:
 
 ```json
+// throw Boom.badImplementation("Submit reasons failed");
 {
 	"type": "Bad Request",
 	"message": "Reason text already exists",
 	"data": null
 }
+
+// sendResponse(res, codes.OK, "Ok", "User fetched", { user });
 ```
 
 ## Used Libraries
