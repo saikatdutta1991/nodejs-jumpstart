@@ -1,4 +1,4 @@
-# reason2smile-api
+# nodejs-jumpstart
 Feel good application for people to share their smile reasons during the tough times of COVID-19.
 
 All Apis will respond with proper HTTP Response Code. A 200OK response code means success. Any response code other than 200OK means something wrong happend.
@@ -76,10 +76,10 @@ Sample error JSON response:
 ```shell
 NODE_ENV=development
 PORT=3000
-APP_NAME=Reason2Smile
+APP_NAME=nodejs-jumpstart
 DB_CONNECTION=mysql
 DB_HOST=127.0.0.1
-DB_DATABASE=reason2smile
+DB_DATABASE=nodejs-jumpstart
 DB_USERNAME=root
 DB_PASSWORD=
 DB_PORT=3306
@@ -87,7 +87,7 @@ FIREBASE_API_KEY=
 JWT_SECRET=
 AWS_ACCESS_KEY_ID=
 AWS_SECRET_ACCESS_KEY=
-AWS_S3_BUCKET=reason2smile
+AWS_S3_BUCKET=nodejs-jumpstart
 ```
 
 ## Run
@@ -110,8 +110,3 @@ NODE_ENV=development ./node_modules/.bin/knex migrate:make users
  
  *Note :  if heroku set the .env
 ```
-
-## Links
-- [Postman v1 HTTP Api docs](https://documenter.getpostman.com/view/10356689/SzYbyxLh?version=latest "Postman v1 HTTP Api docs")
-- [Postman collection download ](https://www.getpostman.com/collections/1a99dfdb006643c0c854")
-
