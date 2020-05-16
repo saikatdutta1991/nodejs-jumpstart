@@ -6,14 +6,12 @@ const path = require("path");
 const _ = require("lodash");
 
 class Router {
-  constructor(app) {
-    this.app = app;
+  constructor() {
     this.path = path.join(__dirname, "../app/routes");
   }
   load() {
-    fs.readdirSync(this.path).forEach(file => {
-      const { prefix, router } = require(path.join(this.path, file));
-      this.app.use(prefix, router);
+    fs.readdirSync(this.path).forEach((file) => {
+      require(path.join(this.path, file));
     });
   }
 }

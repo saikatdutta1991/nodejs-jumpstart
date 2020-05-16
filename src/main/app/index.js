@@ -34,11 +34,9 @@ app.use(
 /** setup body parsers end*/
 
 /** booting app start */
-GlobalVars.load();
-const router = new Router(app); // this router is not express router
-router.load();
-const cron = new Cron();
-cron.register();
+GlobalVars.load("app", app);
+new Router().load(); // this router is not express router
+new Cron().register();
 SocketIOLoader.load();
 /** booting app end */
 
